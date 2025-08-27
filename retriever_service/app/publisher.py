@@ -10,10 +10,11 @@ load_dotenv()  # Load env vars
 class Publisher:
     def __init__(self):
         # Kafka broker(s)
-        brokers = os.getenv("KAFKA_BROKERS", "localhost:9092")
+        brokers = os.getenv("KAFKA_BROKERS")
         self.producer = KafkaProducer(
             bootstrap_servers=brokers.split(","),
-            value_serializer=lambda v: json.dumps(v).encode("utf-8")
+            value_serializer=lambda v: json.dumps(v, default=str).encode("utf-8")
+
         )
 
     def publish(self, topic: str, message: dict):

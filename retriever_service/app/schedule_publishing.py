@@ -39,9 +39,10 @@ class Scheduler:
         while True:
             schedule.run_pending()
             time.sleep(1)
+a = Scheduler()
+a.job()
 
-
-if __name__ == "__main__":
-    # from schedule_publishing import Scheduler
-
-    Scheduler().run()
+# if __name__ == "__main__":
+#     # from schedule_publishing import Scheduler
+#
+#     Scheduler().run()
