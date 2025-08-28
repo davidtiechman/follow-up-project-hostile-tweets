@@ -2,7 +2,7 @@ import json
 import string
 from  nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
-from consumer.app.kafka_consumer import read_news
+from preprocessor_service.consumer.app.kafka_consumer import read_news
 import pandas as pd
 # from test_mongodb import convert_by_df
 def convert_by_df(mongo):

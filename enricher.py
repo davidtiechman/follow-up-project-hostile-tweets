@@ -3,8 +3,8 @@ import os
 import nltk
 from nltk.sentiment import vader
 
-from cleaning.app.processor import convert_by_df
-from consumer.app.kafka_consumer import read_news
+from preprocessor_service.cleaning.app.processor import convert_by_df
+from preprocessor_service.consumer.app.kafka_consumer import read_news
 
 
 class CleaningEnricher:

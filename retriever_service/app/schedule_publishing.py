@@ -3,7 +3,7 @@ import time
 import schedule
 from datetime import datetime
 from retriever import Retriever
-from publisher import Publisher
+from common.publisher import Publisher
 
 
 class Scheduler:
