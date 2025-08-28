@@ -44,7 +44,7 @@ services:
       KAFKA_BROKERS: kafka:9092
     ports:
       - "8000:8000"
-    command: [ "./wait-for-it.sh", "kafka:9092", "--", "python", "app/schedule_publishing.py" ]
+    command: [ "./wait-for-it.sh", "kafka:9092", "--", "python", "app/main.py" ]
 
 
 #  subscriber_interesting:

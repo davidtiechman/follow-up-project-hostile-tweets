@@ -20,15 +20,16 @@ class Retriever:
     def fetch_all(self):
         return list(self.collection.find({}))
 
-    def fetch_batch(self, limit=100):
+    def fetch_batch(self, limit=100, sort_field="timestamp", ascending=True):
         """
-        Fetch the oldest `limit` documents sorted by timestamp
+        Fetch the oldest `limit` documents sorted by `sort_field`
         """
+        sort_order = 1 if ascending else -1
         return list(
-            self.collection.find({}, sort=[("timestamp", 1)], limit=limit)
+            self.collection.find({}, sort=[(sort_field, sort_order)], limit=limit)
         )
 
 
-if __name__ == "__main__":
-    R = Retriever()
-    print(R.fetch_batch(10))  # Fetch 10 oldest docs
+# if __name__ == "__main__":
+#     R = Retriever()
+#     print(R.fetch_batch(10))  # Fetch 10 oldest docs

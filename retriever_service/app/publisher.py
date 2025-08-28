@@ -26,8 +26,8 @@ class Publisher:
         print(f"Published message to {topic}")
 
 
-if __name__ == "__main__":
-    publisher = Publisher()
-    test_msg = {"text": "Hello Kafka", "antisemitic": 0, "timestamp": "2025-08-27T10:00:00"}
-    publisher.publish("raw_tweets_not_antisemitic", test_msg)
+# if __name__ == "__main__":
+#     publisher = Publisher()
+#     test_msg = {"text": "Hello Kafka", "antisemitic": 0, "timestamp": "2025-08-27T10:00:00"}
+#     publisher.publish("raw_tweets_not_antisemitic", test_msg)
 

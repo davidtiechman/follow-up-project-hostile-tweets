@@ -19,4 +19,4 @@ COPY . .
 RUN chmod +x /app/wait-for-it.sh
 
 # Start the service after waiting for Kafka
-CMD ["/app/wait-for-it.sh", "kafka:9092", "--timeout=60", "--strict", "--", "python", "app/schedule_publishing.py"]
+CMD ["/app/wait-for-it.sh", "kafka:9092", "--timeout=60", "--strict", "--", "python", "app/main.py"]
