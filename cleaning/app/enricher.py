@@ -3,15 +3,12 @@ import os
 import nltk
 from nltk.sentiment import vader
 
-from cleaning.app.processor import convert_by_df
 from consumer.app.kafka_consumer import read_news
 
 
 class CleaningEnricher:
-    def __init__(self):
-        self.mongo = read_news('raw_tweets_antisemitic', 3)
-        self.js = [json.loads(i['message']) for i in self.mongo]
-        self.df = convert_by_df(self.mongo)
+    def __init__(self,df):
+        self.df = df
 
     def emotion_text(self):
         nltk.download('vader_lexicon')  # Compute sentiment labels

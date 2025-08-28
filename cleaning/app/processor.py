@@ -2,19 +2,11 @@ import json
 import string
 from  nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
-from consumer.app.kafka_consumer import read_news
 import pandas as pd
-# from test_mongodb import convert_by_df
-def convert_by_df(mongo):
-    mongo = list(mongo)
-    df = pd.DataFrame(mongo)
-    return df
 
 class InitialCleanText:
-    def __init__(self):
-        self.mongo = read_news('raw_tweets_antisemitic',3)
-        self.js = [json.loads(i['message']) for i in self.mongo]
-        self.df = convert_by_df(self.mongo)
+    def __init__(self,df):
+        self.df = df
 
     def remove_punctuation(self):
         self.df['clean_text'] = self.df['text'].str.replace(r'[{}]'.format(string.punctuation), '', regex=True)
@@ -53,14 +45,3 @@ class InitialCleanText:
 # df = clean.remove_stopwords()
 # df = clean.find_root_of_word()
 # df = clean.retrons_to_string()
-# js = to_dict(df)
-# print(df[['clean_text','text','list_words']].head())
-# with open('file.txt', 'w') as f:
-    # f.write(str(df))
-
-# print(df['text','clean_text'].head())
-
-#
-# analyzer = Analyzer()
-# analyzer.rarest_word()
-# print(analyzer.find_weapon_name())

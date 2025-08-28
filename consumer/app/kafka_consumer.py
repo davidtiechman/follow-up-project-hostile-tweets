@@ -1,10 +1,6 @@
 from kafka import KafkaConsumer
 import json
-
-# from consumer.app.insert_to_mongo import insert_to_mongo
 from consumer.app.kafka_configurations import (BOOTSTRAP_SERVERS)
-
-
 def read_news(topic: str,max_massages: int):
     TOPIC_NAME = topic
     GROUP_ID = None
@@ -24,9 +20,7 @@ def read_news(topic: str,max_massages: int):
             break
     if len(arr) > 0:
         print('len message:',len(arr) )
-        # insert_to_mongo(TOPIC_NAME,arr)
     else:
         print('no new messages')
     return arr
 
-# print(read_news('raw_tweets_antisemitic',10))
