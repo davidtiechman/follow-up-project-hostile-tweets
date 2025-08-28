@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd3546c-e83d-4c3d-9a5c-e5bb0fc93b7c" name="Changes" comment="created enricher cleaning">
-      <change beforePath="$PROJECT_DIR$/cleaning/app/enricher.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleaning/app/enricher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleaning/app/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleaning/app/processor.py" afterDir="false" />
-    </list>
+    <list default="true" id="cfd3546c-e83d-4c3d-9a5c-e5bb0fc93b7c" name="Changes" comment="push to mack marching" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="david" />
+        <entry key="$PROJECT_DIR$" value="clene_data" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +54,7 @@
     "Python.test_mongodb.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "clene__data",
+    "git-widget-placeholder": "branch__to__marge",
     "last_opened_file_path": "C:/Users/user/PycharmProjects/follow-up-project-hostile-tweets/cleaning/data"
   }
 }]]></component>
@@ -136,7 +133,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1756363734801</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL‎-00007" summary="push to mack marching">
+      <option name="closed" value="true" />
+      <created>1756364749452</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL‎-00007" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1756364749452</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +162,7 @@
     <MESSAGE value="I have completed all the functions for initial data cleaning and finally return a dataframe with 2 more columns clean_data and list_words." />
     <MESSAGE value="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked." />
     <MESSAGE value="created enricher cleaning" />
-    <option name="LAST_COMMIT_MESSAGE" value="created enricher cleaning" />
+    <MESSAGE value="push to mack marching" />
+    <option name="LAST_COMMIT_MESSAGE" value="push to mack marching" />
   </component>
 </project>
