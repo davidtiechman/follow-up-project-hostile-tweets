@@ -4,21 +4,21 @@ FROM python:3.11-slim
 # Set working directory
 WORKDIR /app
 
-# Copy processor service code
-COPY preprocessor_service/ ./preprocessor_service/
+# Copy enricher service code
+COPY enricher_service/ ./enricher_service/
 
-# Copy common folder
+# Copy common folder (publisher & consumer)
 COPY common/ ./common/
 
 # Install dependencies
-COPY preprocessor_service/requirements.txt .
+COPY enricher_service/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Download nltk data (if needed)
+# Download nltk data
 RUN python -m nltk.downloader vader_lexicon stopwords
 
-# Set environment variables (optional, can also pass at runtime)
+# Set environment variables (optional)
 ENV KAFKA_BROKERS=broker:9092
 
 # Run main.py by default
-CMD ["python", "preprocessor_service/app/main.py"]
+CMD ["python", "enricher_service/app/main.py"]

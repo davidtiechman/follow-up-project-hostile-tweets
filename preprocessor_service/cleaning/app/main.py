@@ -19,9 +19,9 @@ class ProcessorService:
         self.process_messages()
 
     def process_messages(self):
+        # Pass consumed messages into the cleaner
+        cleaner = InitialCleanText(self.messages)
 
-        cleaner = InitialCleanText()
-        cleaner.df = cleaner.df  # assign consumed data if needed
         cleaner.remove_punctuation()
         cleaner.remove_spaces()
         cleaner.remove_extra_whitespace()
@@ -30,11 +30,20 @@ class ProcessorService:
         cleaner.remove_stopwords()
         cleaner.find_root_of_word()
         cleaner.retrons_to_string()
-        # After processing, publish each message
+
+        # Publish results
         self.publish_messages(cleaner.df)
 
     def publish_messages(self, df):
-          # if moved to common
-        # loop through df and publish to corresponding topics
+        publisher = Publisher()  # create once
         for _, row in df.iterrows():
-            Publisher(row['clean_text'], topic="preprocessed_tweets_antisemitic")
+            msg = {
+                "original_text": row["text"],
+                "clean_text": row["clean_text"]
+            }
+            topic = (
+                "preprocessed_tweets_antisemitic"
+                if row.get("antisemitic") == 1
+                else "preprocessed_tweets_not_antisemitic"
+            )
+            publisher.publish(topic, msg)

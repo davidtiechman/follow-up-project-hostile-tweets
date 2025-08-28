@@ -11,8 +11,8 @@ def convert_by_df(mongo):
     return df
 
 class InitialCleanText:
-    def __init__(self):
-        self.mongo = read_news('raw_tweets_antisemitic',3)
+    def __init__(self, mongo):
+        self.mongo = mongo
         self.js = [json.loads(i['message']) for i in self.mongo]
         self.df = convert_by_df(self.mongo)
 

@@ -16,6 +16,18 @@ class EnricherService:
         self.publish_messages(enricher.df)
 
     def publish_messages(self, df):
-        from common.publisher import publish
+        from common.publisher import Publisher
+        publisher = Publisher()
         for _, row in df.iterrows():
-            publish(row['clean_text'], topic="enriched_preprocessed_tweets_antisemitic")
+            msg = {
+                "original_text": row["text"],  # keep original
+                "clean_text": row["clean_text"],  # cleaned text
+                "sentiment": row["type_text"],  # from emotion_text()
+                "weapons": row["weapons_detected"]  # from find_weapon_name()
+            }
+            topic = (
+                "enriched_preprocessed_tweets_antisemitic"
+                if row.get("antisemitic") == 1
+                else "enriched_preprocessed_tweets_not_antisemitic"
+            )
+            publisher.publish(topic, msg)
