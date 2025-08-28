@@ -1,7 +1,5 @@
 from kafka import KafkaConsumer
 import json
-
-# from consumer.app.insert_to_mongo import insert_to_mongo
 from consumer.app.kafka_configurations import (BOOTSTRAP_SERVERS)
 
 

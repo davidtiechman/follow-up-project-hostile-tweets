@@ -1,2 +1,2 @@
 HOST='mongodb://localhost:27017'
-DATABASE='twitter'
+DATABASE='tweets'

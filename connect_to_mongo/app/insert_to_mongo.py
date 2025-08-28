@@ -1,5 +1,5 @@
 import pymongo
-from connect_to_mongo.mongo_confing import HOST, DATABASE
+from connect_to_mongo.app.mongo_confing import HOST, DATABASE
 
 def insert_to_mongo(collection,data):
     myclient = pymongo.MongoClient(HOST)
@@ -15,4 +15,4 @@ def insert_to_mongo(collection,data):
         massage = 'the insert is not updated'
     print(massage)
 
-insert_to_mongo('news',[{'news':1},{'news':2}])
+# insert_to_mongo('news',[{'news':1},{'news':2}])
