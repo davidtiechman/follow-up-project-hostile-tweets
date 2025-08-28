@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd3546c-e83d-4c3d-9a5c-e5bb0fc93b7c" name="Changes" comment="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked.">
-      <change afterPath="$PROJECT_DIR$/cleaning/app/enricher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cleaning/app/test_mongodb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cleaning/data/weapon_list (1).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/app/kafka_configurations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/app/kafka_consumer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleaning/app/processor.py" afterDir="false" />
+    <list default="true" id="cfd3546c-e83d-4c3d-9a5c-e5bb0fc93b7c" name="Changes" comment="created enricher cleaning">
+      <change beforePath="$PROJECT_DIR$/cleaning/app/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleaning/app/processor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +119,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1756300467764</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎-00005" summary="created enricher cleaning">
+      <option name="closed" value="true" />
+      <created>1756363301268</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1756363301268</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +147,7 @@
     <MESSAGE value="I made 2 functions to remove punctuation and special characters" />
     <MESSAGE value="I have completed all the functions for initial data cleaning and finally return a dataframe with 2 more columns clean_data and list_words." />
     <MESSAGE value="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked." />
-    <option name="LAST_COMMIT_MESSAGE" value="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked." />
+    <MESSAGE value="created enricher cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="created enricher cleaning" />
   </component>
 </project>

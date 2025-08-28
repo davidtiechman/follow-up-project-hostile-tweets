@@ -43,8 +43,8 @@ class InitialCleanText:
         self.df['clean_text'] = self.df['list_words'].apply(lambda x:" ".join(x))
         return self.df
 #
-clean = InitialCleanText()
-# print(type(clean.df['message'][0]))
+# clean = InitialCleanText()
+# # print(type(clean.df['message'][0]))
 # df = clean.remove_punctuation()
 # df = clean.remove_spaces()
 # df = clean.remove_extra_whitespace()
