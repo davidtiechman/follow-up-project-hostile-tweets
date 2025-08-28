@@ -5,9 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfd3546c-e83d-4c3d-9a5c-e5bb0fc93b7c" name="Changes" comment="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked.">
-      <change afterPath="$PROJECT_DIR$/persister_service/app/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persister_service/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessor_service/cleaning/app/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessor_service/cleaning/app/processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/consumer/app/kafka_consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/consumer/app/kafka_consumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_retrieval_service/.env" beforeDir="false" afterPath="$PROJECT_DIR$/data_retrieval_service/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_retrieval_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/data_retrieval_service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_retrieval_service/app/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_retrieval_service/app/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_retrieval_service/batch_commands.bat" beforeDir="false" afterPath="$PROJECT_DIR$/data_retrieval_service/batch_commands.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_retrieval_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_retrieval_service/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enricher.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enricher_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/enricher_service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persister_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/persister_service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persister_service/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/persister_service/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persister_service/app/mongodb_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/persister_service/app/mongodb_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persister_service/app/persister.py" beforeDir="false" afterPath="$PROJECT_DIR$/persister_service/app/persister.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persister_service/batch_commands.bat" beforeDir="false" afterPath="$PROJECT_DIR$/persister_service/batch_commands.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persister_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/persister_service/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessor_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/processor_service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessor_service/cleaning/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/processor_service/cleaning/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessor_service/cleaning/app/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/processor_service/cleaning/app/processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessor_service/cleaning/data/weapon_list (1).txt" beforeDir="false" afterPath="$PROJECT_DIR$/processor_service/cleaning/data/weapon_list (1).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessor_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/processor_service/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retriever_service/.env" beforeDir="false" afterPath="$PROJECT_DIR$/retriever_service/.env" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

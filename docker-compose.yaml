@@ -1,4 +1,4 @@
-
+version: '3.9'
 
 services:
   zookeeper:
@@ -21,55 +21,63 @@ services:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092   # <-- fix here
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092   # Container name for internal network
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
 
-
-  #  mongo:
-#    image: mongo:6.0
-#    container_name: mongo
-#    ports:
-#      - "27017:27017"
-#    volumes:
-#      - mongo_data:/data/db
+  mongo:
+    image: mongo:6.0
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
 
   retriever_service:
     build: ./retriever_service
     container_name: retriever_service
     depends_on:
       - kafka
+      - mongo
     env_file:
-      - .env
-    environment:
-      KAFKA_BROKERS: kafka:9092
+      - .env  # Service-specific environment file
     ports:
       - "8000:8000"
-    command: [ "./wait-for-it.sh", "kafka:9092", "--", "python", "app/main.py" ]
+    command: ["python", "app/main.py"]
 
+  processor_service:
+    build: ./processor_service
+    container_name: processor_service
+    depends_on:
+      - kafka
+    env_file:
+      - .env
+    ports:
+      - "8001:8001"
+    command: ["./wait-for-it.sh", "kafka:9092", "--", "python", "app/main.py"]
 
-#  subscriber_interesting:
-#    build: ./subscriber_interesting
-#    container_name: subscriber_interesting
-#    depends_on:
-#      - kafka
-#      - mongo
-#    environment:
-#      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
-#      MONGO_URI: mongodb://mongo:27017
-#    ports:
-#      - "8001:8001"
+  enricher_service:
+    build: ./enricher_service
+    container_name: enricher_service
+    depends_on:
+      - kafka
+    env_file:
+      - .env
+    ports:
+      - "8002:8002"
+    command: ["./wait-for-it.sh", "kafka:9092", "--", "python", "app/main.py"]
 
-#  subscriber_not_interesting:
-#    build: ./subscriber_not_interesting
-#    container_name: subscriber_not_interesting
-#    depends_on:
-#      - kafka
-#      - mongo
-#    environment:
-#      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
-#      MONGO_URI: mongodb://mongo:27017
-#    ports:
-#      - "8002:8002"
-#
-#volumes:
-#  mongo_data:
+  persister_service:
+    build: ./persister_service
+    container_name: persister_service
+    depends_on:
+      - kafka
+      - mongo
+    env_file:
+      - .env
+    ports:
+      - "8003:8003"
+    command: ["./wait-for-it.sh", "kafka:9092", "--", "python", "app/main.py"]
+
+volumes:
+  mongo_data:

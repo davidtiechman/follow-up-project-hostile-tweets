@@ -1,7 +1,7 @@
 
 from common.consumer.app.kafka_consumer import read_news
 from common.publisher import Publisher
-from preprocessor_service.cleaning.app.processor import InitialCleanText
+from processor_service.cleaning.app.processor import InitialCleanText
 
 
 class ProcessorService:
