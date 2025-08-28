@@ -2,8 +2,9 @@
 import time
 import schedule
 from datetime import datetime
-from retriever import Retriever
-from publisher import Publisher
+
+from retriever_service.app.publisher import Publisher
+from retriever_service.app.retriever import Retriever
 
 
 class Scheduler:
