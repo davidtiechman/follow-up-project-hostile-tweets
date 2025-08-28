@@ -1,18 +1,21 @@
 import json
 import string
-import pandas as pd
 from  nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
-from pandas.core.methods.to_dict import to_dict
+from consumer.app.kafka_consumer import read_news
+import pandas as pd
+# from test_mongodb import convert_by_df
+def convert_by_df(mongo):
+    mongo = list(mongo)
+    df = pd.DataFrame(mongo)
+    return df
 
-from test_mongodb import load_data, convert_by_df
-
-
-class InitialCleanText():
+class InitialCleanText:
     def __init__(self):
-        self.mongo = load_data()
+        self.mongo = read_news('raw_tweets_antisemitic',3)
+        self.js = [json.loads(i['message']) for i in self.mongo]
         self.df = convert_by_df(self.mongo)
-        # self.df:
+
     def remove_punctuation(self):
         self.df['clean_text'] = self.df['text'].str.replace(r'[{}]'.format(string.punctuation), '', regex=True)
         return self.df
@@ -40,7 +43,8 @@ class InitialCleanText():
         self.df['clean_text'] = self.df['list_words'].apply(lambda x:" ".join(x))
         return self.df
 #
-# clean = InitialCleanText()
+clean = InitialCleanText()
+# print(type(clean.df['message'][0]))
 # df = clean.remove_punctuation()
 # df = clean.remove_spaces()
 # df = clean.remove_extra_whitespace()
@@ -52,7 +56,7 @@ class InitialCleanText():
 # js = to_dict(df)
 # print(df[['clean_text','text','list_words']].head())
 # with open('file.txt', 'w') as f:
-#     f.write(str(js))
+    # f.write(str(df))
 
 # print(df['text','clean_text'].head())
 

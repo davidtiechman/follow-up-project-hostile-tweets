@@ -1,15 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd3546c-e83d-4c3d-9a5c-e5bb0fc93b7c" name="Changes" comment="" />
+    <list default="true" id="cfd3546c-e83d-4c3d-9a5c-e5bb0fc93b7c" name="Changes" comment="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked.">
+      <change afterPath="$PROJECT_DIR$/cleaning/app/enricher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cleaning/app/test_mongodb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cleaning/data/weapon_list (1).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/app/kafka_configurations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/app/kafka_consumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleaning/app/processor.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="david" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;davidtiechman&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/davidtiechman/follow-up-project-hostile-tweets.git&quot;,
+    &quot;accountId&quot;: &quot;c296eae0-0023-4086-b294-7987706c70fb&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="31rMPUXJtOURWbMe0zIkgwyUVuv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -18,9 +56,28 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "Python.enricher.executor": "Run",
+    "Python.kafka_consumer.executor": "Run",
+    "Python.processor.executor": "Run",
+    "Python.test_mongodb.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "clene__data",
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/follow-up-project-hostile-tweets/cleaning/data"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\cleaning\data" />
+      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\consumer" />
+      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\consumer\app" />
+      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\cleaning\app" />
+      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -36,6 +93,58 @@
       <option name="presentableId" value="Default" />
       <updated>1756277713749</updated>
     </task>
+    <task id="LOCAL‎-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1756277869094</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL‎-00001" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1756277869094</updated>
+    </task>
+    <task id="LOCAL‎-00002" summary="I made 2 functions to remove punctuation and special characters">
+      <option name="closed" value="true" />
+      <created>1756283312249</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL‎-00002" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1756283312249</updated>
+    </task>
+    <task id="LOCAL‎-00003" summary="I have completed all the functions for initial data cleaning and finally return a dataframe with 2 more columns clean_data and list_words.">
+      <option name="closed" value="true" />
+      <created>1756294519523</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL‎-00003" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1756294519523</updated>
+    </task>
+    <task id="LOCAL‎-00004" summary="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked.">
+      <option name="closed" value="true" />
+      <created>1756300467764</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL‎-00004" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1756300467764</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commmit" />
+    <MESSAGE value="first commit" />
+    <MESSAGE value="I made 2 functions to remove punctuation and special characters" />
+    <MESSAGE value="I have completed all the functions for initial data cleaning and finally return a dataframe with 2 more columns clean_data and list_words." />
+    <MESSAGE value="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked." />
+    <option name="LAST_COMMIT_MESSAGE" value="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked." />
   </component>
 </project>
