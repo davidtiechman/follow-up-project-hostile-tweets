@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfd3546c-e83d-4c3d-9a5c-e5bb0fc93b7c" name="Changes" comment="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked.">
+      <change afterPath="$PROJECT_DIR$/persister_service/app/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enricher_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/enricher_service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enricher_service/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/enricher_service/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessor_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessor_service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessor_service/cleaning/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessor_service/cleaning/app/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/preprocessor_service/cleaning/app/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessor_service/cleaning/app/processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessor_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessor_service/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +59,7 @@
     "Python.test_mongodb.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#1 on test__merge",
+    "git-widget-placeholder": "add__persister",
     "last_opened_file_path": "C:/Users/ydovz/foolow-up-hostile-tweets/enricher_service/app",
     "settings.editor.selected.configurable": "project.propVCSSupport.ChangelistConflict"
   }
@@ -77,11 +73,11 @@
       <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ydovz\foolow-up-hostile-tweets\persister_service\app" />
       <recent name="C:\Users\ydovz\foolow-up-hostile-tweets\common" />
       <recent name="C:\Users\ydovz\foolow-up-hostile-tweets" />
       <recent name="C:\Users\ydovz\foolow-up-hostile-tweets\preprocessor_service" />
       <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\consumer\app" />
-      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\cleaning\app" />
     </key>
   </component>
   <component name="RunManager">
