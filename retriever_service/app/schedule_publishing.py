@@ -2,7 +2,6 @@
 import time
 import schedule
 from datetime import datetime
-
 from retriever_service.app.publisher import Publisher
 from retriever_service.app.retriever import Retriever
 

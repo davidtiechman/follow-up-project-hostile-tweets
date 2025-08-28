@@ -3,7 +3,7 @@ import os
 import nltk
 from nltk.sentiment import vader
 
-from cleaning.app.processor import convert_by_df
+from consumer.app.covert_to_df import convert_to_df
 from consumer.app.kafka_consumer import read_news
 
 
@@ -11,9 +11,10 @@ class CleaningEnricher:
     def __init__(self):
         self.mongo = read_news('raw_tweets_antisemitic', 3)
         self.js = [json.loads(i['message']) for i in self.mongo]
-        self.df = convert_by_df(self.mongo)
+        self.df = convert_to_df(self.mongo)
 
     def emotion_text(self):
+        "מחלק טקסט לסוג רגש טקסט"
         nltk.download('vader_lexicon')  # Compute sentiment labels
         # tweet = self.df['Text'].loc[0]
         self.df['score'] = self.df['text'].apply(
@@ -30,6 +31,7 @@ class CleaningEnricher:
 
 
     def lop_of_array_weapons(self,row):
+        "מוסיף עמודה עם שמות נשק בטקסט"
         arr_weapon = []
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         file_path = os.path.join(BASE_DIR, 'data', 'weapon_list (1).txt')
