@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd3546c-e83d-4c3d-9a5c-e5bb0fc93b7c" name="Changes" comment="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked.">
-      <change afterPath="$PROJECT_DIR$/cleaning/app/enricher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cleaning/app/test_mongodb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cleaning/data/weapon_list (1).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/app/kafka_configurations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/app/kafka_consumer.py" afterDir="false" />
+    <list default="true" id="cfd3546c-e83d-4c3d-9a5c-e5bb0fc93b7c" name="Changes" comment="Add comments">
+      <change afterPath="$PROJECT_DIR$/consumer/app/covert_to_df.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleaning/app/processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/app/kafka_consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/app/kafka_consumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retriever_service/app/publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/retriever_service/app/publisher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retriever_service/app/schedule_publishing.py" beforeDir="false" afterPath="$PROJECT_DIR$/retriever_service/app/schedule_publishing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="david" />
+        <entry key="$PROJECT_DIR$" value="test_merge" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,27 +54,63 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.coverte_to_df.executor": "Run",
     "Python.enricher.executor": "Run",
+    "Python.insert_to_mongo.executor": "Run",
     "Python.kafka_consumer.executor": "Run",
     "Python.processor.executor": "Run",
+    "Python.schedule_publishing.executor": "Run",
     "Python.test_mongodb.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "clene__data",
-    "last_opened_file_path": "C:/Users/user/PycharmProjects/follow-up-project-hostile-tweets/cleaning/data"
+    "git-widget-placeholder": "Notes",
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/follow-up-project-hostile-tweets/connect_to_mongo"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\connect_to_mongo" />
+      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets" />
       <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\cleaning\data" />
       <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\consumer" />
-      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\consumer\app" />
       <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\cleaning\app" />
       <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="schedule_publishing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="follow-up-project-hostile-tweets" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/retriever_service/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/retriever_service/app/schedule_publishing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.schedule_publishing" />
+        <item itemvalue="Python.schedule_publishing" />
+        <item itemvalue="Python.schedule_publishing" />
+        <item itemvalue="Python.schedule_publishing" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -125,7 +159,55 @@
       <option name="project" value="LOCAL‎" />
       <updated>1756300467764</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎-00005" summary="added a pictcer dghain.png">
+      <option name="closed" value="true" />
+      <created>1756377686781</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1756377686781</updated>
+    </task>
+    <task id="LOCAL‎-00006" summary="added a pictcer dghain.png">
+      <option name="closed" value="true" />
+      <created>1756377790186</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1756377790186</updated>
+    </task>
+    <task id="LOCAL‎-00007" summary="added a pictcer dghain.png">
+      <option name="closed" value="true" />
+      <created>1756377891234</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL‎-00007" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1756377891234</updated>
+    </task>
+    <task id="LOCAL‎-00008" summary="added a pictcer dghain.png">
+      <option name="closed" value="true" />
+      <created>1756378047104</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL‎-00008" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1756378047104</updated>
+    </task>
+    <task id="LOCAL‎-00009" summary="added a funct to insert to the mongo">
+      <option name="closed" value="true" />
+      <created>1756379465510</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL‎-00009" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1756379465511</updated>
+    </task>
+    <task id="LOCAL‎-00010" summary="Add comments">
+      <option name="closed" value="true" />
+      <created>1756380847239</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL‎-00010" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1756380847240</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +227,20 @@
     <MESSAGE value="I made 2 functions to remove punctuation and special characters" />
     <MESSAGE value="I have completed all the functions for initial data cleaning and finally return a dataframe with 2 more columns clean_data and list_words." />
     <MESSAGE value="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked." />
-    <option name="LAST_COMMIT_MESSAGE" value="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked." />
+    <MESSAGE value="added a pictcer dghain.png" />
+    <MESSAGE value="added a funct to insert to the mongo" />
+    <MESSAGE value="Add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comments" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/retriever_service/app/retriever.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

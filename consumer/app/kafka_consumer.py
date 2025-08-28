@@ -29,4 +29,4 @@ def read_news(topic: str,max_massages: int):
         print('no new messages')
     return arr
 
-# print(read_news('raw_tweets_antisemitic',10))
+# print(type(read_news('raw_tweets_antisemitic',10)))
