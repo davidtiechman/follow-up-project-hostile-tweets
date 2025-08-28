@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd3546c-e83d-4c3d-9a5c-e5bb0fc93b7c" name="Changes" comment="I tested all the functions, brought in mongo, converted it to a data frame, and ran all the functions until something worked.">
+    <list default="true" id="cfd3546c-e83d-4c3d-9a5c-e5bb0fc93b7c" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/enricher/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enricher/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleaning/app/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleaning/app/processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleaning/app/test_mongodb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaning/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/processor/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaning/app/enricher.py" beforeDir="false" afterPath="$PROJECT_DIR$/enricher/app/enricher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaning/app/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/processor/app/processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaning/data/weapon_list (1).txt" beforeDir="false" afterPath="$PROJECT_DIR$/processor/data/weapon_list (1).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaning/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/processor/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaning/scrips.bat" beforeDir="false" afterPath="$PROJECT_DIR$/processor/scrips.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect_to_mongo/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/connect_to_mongo/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect_to_mongo/scrips.bat" beforeDir="false" afterPath="$PROJECT_DIR$/connect_to_mongo/scrips.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +44,12 @@
     &quot;assignee&quot;: &quot;davidtiechman&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/davidtiechman/follow-up-project-hostile-tweets.git&quot;,
-    &quot;accountId&quot;: &quot;e97b9928-07ba-4a98-806e-5113478cfcca&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/davidtiechman/follow-up-project-hostile-tweets.git",
+    "accountId": "c296eae0-0023-4086-b294-7987706c70fb"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -49,36 +58,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.connect_to_mongo/Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.enricher.executor&quot;: &quot;Run&quot;,
-    &quot;Python.kafka_consumer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.processor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.schedule_publishing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_mongodb.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;creat__docker&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/follow-up-project-hostile-tweets&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.ChangelistConflict&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.connect_to_mongo/Dockerfile.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.enricher.executor": "Run",
+    "Python.kafka_consumer.executor": "Run",
+    "Python.processor.executor": "Run",
+    "Python.schedule_publishing.executor": "Run",
+    "Python.test_mongodb.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/follow-up-project-hostile-tweets/enricher",
+    "settings.editor.selected.configurable": "project.propVCSSupport.ChangelistConflict"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\enricher" />
       <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets" />
       <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\retriever_service" />
       <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\cleaning" />
       <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\connect_to_mongo" />
-      <recent name="C:\Users\ydovz\foolow-up-hostile-tweets\enricher_service\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\enricher\app" />
+      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\cleaning" />
+      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\cleaning\app" />
       <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\connect_to_mongo\app" />
       <recent name="C:\Users\ydovz\foolow-up-hostile-tweets\common" />
-      <recent name="C:\Users\ydovz\foolow-up-hostile-tweets" />
-      <recent name="C:\Users\ydovz\foolow-up-hostile-tweets\preprocessor_service" />
-      <recent name="C:\Users\user\PycharmProjects\follow-up-project-hostile-tweets\consumer\app" />
     </key>
   </component>
   <component name="RunManager" selected="Docker.connect_to_mongo/Dockerfile">
@@ -216,7 +225,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
+        <option value="bundled-python-sdk-41e8cd69c857-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.90" />
       </set>
     </attachedChunks>
   </component>
@@ -291,10 +300,6 @@
           <url>file://$PROJECT_DIR$/retriever_service/app/retriever.py</url>
           <line>2</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cleaning/app/processor.py</url>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

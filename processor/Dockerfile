@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["python", "insert_to_mongo.py"]
+CMD ["python", "app/processor.py"]
